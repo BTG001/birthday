@@ -45,6 +45,7 @@ nav ul li a {
   background-size: cover;
   width: 98%;
   height: 70vh;
+  background-repeat: no-repeat;
   position: relative;
   padding-left: 6%;
   padding-top: 5%;
@@ -60,4 +61,7 @@ nav ul li a {
   color: blue;
   margin-top: 30px;
   font-weight: bold;
+}
+.about-section p {
+  margin-top: 10px;
 }
