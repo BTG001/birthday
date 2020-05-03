@@ -56,3 +56,8 @@ nav ul li a {
   font-family: monospace;
   object-fit: cover;
 }
+.about-section h1 {
+  color: blue;
+  margin-top: 30px;
+  font-weight: bold;
+}
