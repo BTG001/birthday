@@ -17,29 +17,34 @@
         <nav>
           <img class="logo" src="./images/birthday.jpeg" height="150" alt="birthday logo">
           <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="about.html">About</a></li>
           </ul>
         </nav>
       </section>
-      <section class="container-fluid showcase-section">
-        <h1>Akan Names</h1>
-      </section>
-
-      <!--About Section-->
-      <section class="container about-section">
-        <h1><strong>About</strong></h1>
-        <div class="row">
-          <div class="col-md-7">
-            <p>This is a web application that a user keys in his or her birthday through a form and the web application calculates the day of the week they were born.</p>
-          </div>
-          <div class="col-md-5">
-            <p>The user also can choose his or her gender and know their Akan names depending on the gender output.</p>
-          </div>
+      
+      <!--Akan name section-->
+      <section class="container akan-section">
+        <h1><strong>Akan Name</strong></h1>
+        <p>To know your Akan name, kindly fill in the form below :</p>
+      <form onsubmit="return validate()" action="index.html">
+        <div class="input-form">
+        Your Name<br>
+        <input id="uname" type="text" placeholder="Username"><br><br>
+        Your Email<br>
+        <input id="mail" type="email" name="email" placeholder="Email"/><br><br>
+        Your Date of Birth<br>
+        <input id="month" type="text" placeholder="MM">
+        <input id="date" type="text" placeholder="DD">
+        <input id="year" type="text" placeholder="YYYY"><br><br>
+        Your Gender<br>
+        <input id="man" type="radio" name="gender" value="male">Male<br>
+        <input id="woman" type="radio" name="gender" value="female">Female<br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
         </div>
-      </section><br><br>
-      <section>
-
+      </form>
+      </section>
       <!--Javascript-->
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
