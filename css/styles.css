@@ -65,3 +65,11 @@ nav ul li a {
 .about-section p {
   margin-top: 10px;
 }
+.akan-section h1 {
+  color: blue;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.akan-section p {
+  margin-top: 20px;
+}
