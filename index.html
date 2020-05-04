@@ -44,12 +44,12 @@
       <section class="container akan-section">
         <h1><strong>Akan Name</strong></h1>
         <p>To know your Akan name, kindly fill in the form below :</p>
-      <form>
+      <form onsubmit="return validate()" action="index.html">
         <div class="input-form">
         Your Name<br>
-        <input type="text" required name="username" placeholder="username"><br><br>
+        <input id="uname" type="text" required name="username" placeholder="username"><br><br>
         Your Email<br>
-        <input type="text" name="email" placeholder="Email"/><br><br>
+        <input id="mail" type="email" name="email" placeholder="Email"/><br><br>
         Your Date of Birth<br>
         <input type="date"><br><br>
         Your Gender<br>
