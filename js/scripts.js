@@ -33,6 +33,9 @@
     alert("Enter the Year");
     return false;
   }
+  var newDate = new Date(month + "/" + date + "/" + year);
+  var d = newDate.getDay();
+  
   else if((radio1 == "") && (radio2 == ""))
   {
     alert("Select either male or female");
