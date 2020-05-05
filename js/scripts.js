@@ -14,7 +14,7 @@ if(username.value == "" || email.value == "" || inputDate.value == "" || inputMo
   alert("No blank values allowed");
   return false;
 }
-else if(inputMonth.value <= 0 || inputMonth.value > 12)
+else if((inputMonth.value <= 0 || inputMonth.value > 12) || (inputMonth.value == 2 && inputDate.value > 29))
 {
   alert("Enter a valid month");
   return false;
