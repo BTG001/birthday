@@ -33,20 +33,22 @@
     alert("Enter the Year");
     return false;
   }
-  var newDate = new Date(month + "/" + date + "/" + year);
-  var d = newDate.getDay();
-
   else if((radio1 == "") && (radio2 == ""))
   {
     alert("Select either male or female");
     return false
   }
-  else if(radio1 == true) {
-    alert("The day of the week that you were born on is " + daysOfWeek + " and your Akan name is " + maleNames[d]);
+  else {
+    true;
   }
 
-  else
-{
-  true;
-}
+  var New = new Date(inputMonth + "/" + inputDate + "/" + inputYear);
+  var d = New.getDate()
+
+  if (radio1 == true) {
+    alert("You were born on " + daysOfWeek[d] + " and your Akan name is: " + maleNames[d]);
+  }
+  if (radio2 == true) {
+    alert("You were born on " + daysOfWeek[d] + " and your Akan name is: " + femaleNames[d]);
+  }
 }
