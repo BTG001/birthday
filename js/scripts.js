@@ -6,9 +6,9 @@
 {
   var username = document.getElementById("uname");
   var email = document.getElementById("mail");
-  var inputMonth = document.getElementById("month");
-  var inputDate = document.getElementById("date");
-  var inputYear = document.getElementById("year");
+  var inputMonth = parseInt(document.getElementById("month"));
+  var inputDate = parseInt(document.getElementById("date"));
+  var inputYear = parseInt(document.getElementById("year"));
   var radio1 = document.getElementById("man").checked;
   var radio2 = document.getElementById("woman").checked;
 
@@ -35,12 +35,16 @@
   }
   var newDate = new Date(month + "/" + date + "/" + year);
   var d = newDate.getDay();
-  
+
   else if((radio1 == "") && (radio2 == ""))
   {
     alert("Select either male or female");
     return false
   }
+  else if(radio1 == true) {
+    alert("The day of the week that you were born on is " + daysOfWeek + " and your Akan name is " + maleNames[d]);
+  }
+
   else
 {
   true;
